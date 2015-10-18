@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+        android:id="@+id/bg"
+        android:background="@drawable/bg1"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo"
+                android:src="@drawable/iconmi"
+                android:padding="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_below="@+id/logo"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:id="@+id/id"
+                        android:paddingTop="10dp"
+                        android:text="ID"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/age"
+                        android:text="Age"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/id1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/gender"
+                        android:text="Gender"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/age1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/dob"
+                        android:text="Date Of Birth"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/gender1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/col"
+                        android:text="Color"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/dob1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/matst"
+                        android:text="Marital Status"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/col1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/lang"
+                        android:text="Language"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/matst1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/loc"
+                        android:text="Location"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:layout_below="@+id/lang1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/id1"
+                        android:text=""
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/age1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_below="@+id/id1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/gender1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_below="@+id/age1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/dob1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_below="@+id/gender1"
+                        android:layout_marginStart="120dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/col1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_below="@+id/dob1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/matst1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_below="@+id/col1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/lang1"
+                        android:text=""
+                        android:paddingBottom="10dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_below="@+id/matst1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/loc1"
+                        android:text=""
+                        android:layout_below="@+id/lang1"
+                        android:layout_marginStart="120dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

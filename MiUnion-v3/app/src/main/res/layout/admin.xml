@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/bg"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:gravity="center"
+        android:id="@+id/textViewUser1"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:text="Recommendation to government for welfare activity and schemes"
+        android:textSize="18dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/list"
+        android:paddingTop="20dp"
+        android:textColor="@color/textcolorprimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Miunion</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="mail">Mail Id</string>
+    <string name="pass">Password</string>
+    <string name="log">Log In</string>
+    <string name="reg">No account yet? Create one</string>
+
+    <string name="id">Patient Id</string>
+    <string name="conform">Confirm Password</string>
+    <string name="place">City</string>
+   <string name="mobile">Mobile No.</string>
+    <string name="email">Email Id</string>
+
+<string name="age">Age based diseases</string>
+    <string name="welfare">Welfare schemes for disease based on locality</string>
+    <string name="epidemic">Disease with most number of patients</string>
+
+    <string name="history">Recent History of the patient Who is at the hospital</string>
+    <string name="remote">Recommended Hospital with disease diagnosis infrastructure</string>
+    <string name="location">Top disease in the locality</string>
+
+    <string name="Hospital">Recommended Hospital based on your recent diseases </string>
+    <string name="lab">Recommended Lab based on your recent diagnosis</string>
+    <string name="camp">Recommended Hospital which organises camp based on your diagnosis</string>
+
+    <string name="place_prompt">Choose a location</string>
+
+
+</resources>

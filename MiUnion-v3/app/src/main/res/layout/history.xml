@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bg"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/history"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/a"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/t1"
+                    android:text="Disease"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/t2"
+                    android:text="Code"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="35dp" />
+                <TextView
+                    android:id="@+id/t3"
+                    android:text="Entry"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_below="@+id/t2"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t4"
+                    android:text="Exit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t5"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/t1"
+                    android:layout_marginStart="70dp" />
+                <TextView
+                    android:id="@+id/t6"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/t3"
+                    android:layout_alignStart="@+id/t5" />
+                <TextView
+                    android:id="@+id/t7"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/t3"
+                    android:layout_alignStart="@+id/t6" />
+                <TextView
+                    android:id="@+id/t8"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/t7" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/card_view1"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:text="Disease"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/t21"
+                    android:text="Code"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t11"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="35dp" />
+                <TextView
+                    android:id="@+id/t31"
+                    android:text="Entry"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_below="@+id/t21"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t41"
+                    android:text="Exit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t51"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/t11"
+                    android:layout_marginStart="70dp" />
+                <TextView
+                    android:id="@+id/t61"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/t31"
+                    android:layout_alignStart="@+id/t51" />
+                <TextView
+                    android:id="@+id/t71"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/t31"
+                    android:layout_alignStart="@+id/t61" />
+                <TextView
+                    android:id="@+id/t81"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/t71" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_below="@+id/card_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/t12"
+                    android:text="Disease"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/t22"
+                    android:text="Code"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t12"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="35dp" />
+                <TextView
+                    android:id="@+id/t32"
+                    android:text="Entry"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_below="@+id/t22"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t42"
+                    android:text="Exit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/t52"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/t22"
+                    android:layout_toEndOf="@+id/t12"
+                    android:layout_marginStart="70dp" />
+                <TextView
+                    android:id="@+id/t62"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/t32"
+                    android:layout_alignStart="@+id/t52" />
+                <TextView
+                    android:id="@+id/t72"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/t32"
+                    android:layout_alignStart="@+id/t62" />
+                <TextView
+                    android:id="@+id/t82"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/t72" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

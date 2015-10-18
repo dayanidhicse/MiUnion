@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/user"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/id"
+            android:typeface="sans"
+            />
+        <EditText
+            android:id="@+id/pass"
+            android:layout_below="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/pass"
+            android:typeface="sans"
+            />
+        <EditText
+            android:id="@+id/conform"
+            android:layout_below="@id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/conform"
+
+            android:typeface="sans" />
+        <EditText
+            android:id="@+id/place"
+            android:layout_below="@+id/conform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/place"
+            android:typeface="sans"
+            />
+        <EditText
+            android:id="@+id/mail"
+            android:layout_below="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/mail"
+
+            android:typeface="sans" />
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_below="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/mobile"
+
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorPrimary"
+            android:textColor="@color/icon"
+            android:text="Register"
+            android:layout_below="@+id/mobile"
+            android:typeface="sans" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

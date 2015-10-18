@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/bg"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/a"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/age"
+                android:textSize="18dp"
+
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_gravity="center"
+           android:layout_below="@+id/a"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:text="Age Limit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:id="@+id/TextView011"
+                    android:text="Disease"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="34dp" />
+                <TextView
+                    android:id="@+id/TextView02" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/TextView01"/>
+                <TextView
+                    android:id="@+id/TextView022" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/TextView02"
+                    android:layout_alignStart="@+id/TextView011" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_below="@+id/card_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:text="Age Limit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:id="@+id/TextView033"
+                    android:text="Disease"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_marginEnd="34dp"
+                    android:layout_above="@+id/TextView04"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:id="@+id/TextView04" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/TextView03"/>
+                <TextView
+                    android:id="@+id/TextView044" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/TextView04"
+                    android:layout_alignStart="@+id/TextView033" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_below="@+id/card_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:text="Age Limit"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:id="@+id/TextView055"
+                    android:text="Disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="34dp" />
+                <TextView
+                    android:id="@+id/TextView06" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/TextView05"/>
+                <TextView
+                    android:id="@+id/TextView066" android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/TextView06"
+                    android:layout_alignStart="@+id/TextView055" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

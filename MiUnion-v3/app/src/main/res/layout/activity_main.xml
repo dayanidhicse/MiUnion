@@ -1,0 +1,75 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg1"
+        android:layout_height="match_parent"
+        android:id="@+id/bg"
+
+        tools:context=".MainActivity" >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/llogo1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <EditText
+
+            android:id="@+id/uname"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:hint="Username"
+            android:typeface="sans" />
+        <EditText
+            android:id="@+id/upass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:hint="@string/pass"
+            android:layout_below="@+id/uname"
+
+
+            android:layout_marginTop="10dp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/log"
+            android:background="@drawable/mybutton"
+            android:gravity="center"
+            android:textColor="@color/icon"
+            android:typeface="sans"
+            android:layout_below="@+id/upass"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/Re"
+            android:layout_width="match_parent"
+            android:text="@string/reg"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_below="@+id/login"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_marginTop="5dp"
+            android:typeface="sans" />
+
+</RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
