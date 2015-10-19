@@ -1,7 +1,7 @@
 # MiUnion
 Project based on healthcare...
 
-#MiUnion-v3
+<b>MiUnion-v3</b>
 
 *This folder contains the android application project.
 
@@ -11,14 +11,14 @@ Project based on healthcare...
 --Install Android Studio (Download Link :http://developer.android.com/sdk/index.html)
 --Import the project :)
 
-#MiUnion-(Service)
+<b>MiUnion-(Service)</b>
 
 *This folder contains the Service factory.
 
 *Installation Procedure
 --Place these folders in the hosting server.
 
-***NOTE:
+<b>NOTE:</b>
 
 -->Changes has to be done according to the Domain name in sevice files & in application.
 
