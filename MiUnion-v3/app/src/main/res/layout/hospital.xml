@@ -24,12 +24,16 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <ListView
+   <!-- <ListView
         android:id="@+id/list"
         android:paddingTop="20dp"
         android:textColor="@color/textcolorprimary"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+    <ListView
+        android:id="@+id/list12"
+        android:textColor="@color/textcolorprimary"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
 
 </LinearLayout>

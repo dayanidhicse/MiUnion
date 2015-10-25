@@ -47,6 +47,20 @@ public class Hospital extends ActionBarActivity {
     String item1;
     String input;
     String rest,pg;
+
+    ListView list;
+    String[] web = {
+            "History",
+            "Remote",
+            "Location"
+    } ;
+    Integer[] imageId = {
+            R.drawable.history,
+            R.drawable.remote,
+            R.drawable.location
+
+    };
+
     public static final String DATA1 = "DATA1";
     public static final String DATA2 = "DATA2";
     public static final String DATA3 = "DATA3";
@@ -59,33 +73,37 @@ public class Hospital extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hospital);
-     /*   LinearLayout linearLayout = (LinearLayout)findViewById(R.id.bg);
-        Resources res = getResources();
-        Drawable portrait = res.getDrawable(R.drawable.bg);
-        Drawable landscape = res.getDrawable(R.drawable.bg1);
 
-        WindowManager window = (WindowManager)getSystemService(WINDOW_SERVICE);
-        Display display = window.getDefaultDisplay();
-        int num = display.getRotation();
-        if (num == 0){
-            linearLayout.setBackgroundDrawable(portrait);
-        }else if (num == 1 || num == 3){
-            linearLayout.setBackgroundDrawable(landscape);
-        }else{
-            linearLayout.setBackgroundDrawable(portrait);
-        }*/
+//start
+        CustomList adapter1 = new
+                CustomList(Hospital.this, web, imageId);
+        list=(ListView)findViewById(R.id.list12);
+        list.setAdapter(adapter1);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+               // Toast.makeText(Hospital.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+                String item = web[+ position].toString();
+                na=item;
+                // Toast.makeText(getBaseContext(),item , Toast.LENGTH_LONG).show();
+                showInputDialog();
+            }
+        });
+
+        //end
         Intent intent = getIntent();
 
         username = intent.getStringExtra(MainActivity.ID);
         id1 = intent.getStringExtra(MainActivity.ID1);
         textView=(TextView) findViewById(R.id.textViewUser);
         textView.setText(username);
-
-        lv=(ListView) findViewById(R.id.list);
+        aboutUser();
+       /* lv=(ListView) findViewById(R.id.list);
         aa=new ArrayAdapter(this,android.R.layout.simple_list_item_1,al);
         lv.setAdapter(aa);
-        aboutUser();
+
         Product[] items = {
                 new Product("History"),
                 new Product("Remote"),
@@ -106,7 +124,7 @@ public class Hospital extends ActionBarActivity {
                 showInputDialog();
                 // Toast.makeText(getBaseContext(),item , Toast.LENGTH_LONG).show();
             }
-        });
+        }); */
 
 
     }
